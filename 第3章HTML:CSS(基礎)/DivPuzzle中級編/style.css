@@ -1,0 +1,51 @@
+@charset "utf-8";
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+
+}
+.red--box {
+width: 400px;
+height: 100px;
+background: #ff0000;
+}
+.green--box {
+width: 150px;
+height: 250px;
+background: #00ff1e;
+float: left;
+}
+.puple--box {
+width: 150px;
+height: 50px;
+background: #cc00db;
+}
+.blue--box {
+width: 150px;
+height: 100px;
+background: #0093b7;
+}
+.brown--box {
+width: 250px;
+height: 100px;
+background: #8c2727;
+}
+.orange--box {
+width: 100px;
+height: 150px;
+background: #ff9e6b;
+float: left;
+}
+.yellow--box {
+  width: 400px;
+  height: 100px;
+  background: #ffe700;
+  }
+  .pupleandblue {
+    height: 150px;
+    float: left;
+  }
+.mix {
+  float: left;
+}
