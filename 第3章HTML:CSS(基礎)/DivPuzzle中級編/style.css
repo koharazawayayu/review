@@ -22,12 +22,10 @@ height: 50px;
 background: #cc00db;
 }
 .blue--box {
-width: 150px;
 height: 100px;
 background: #0093b7;
 }
 .brown--box {
-width: 250px;
 height: 100px;
 background: #8c2727;
 }
@@ -42,8 +40,7 @@ float: left;
   height: 100px;
   background: #ffe700;
   }
-  .pupleandblue {
-    height: 150px;
+.pupleandblue {
     float: left;
   }
 .mix {
