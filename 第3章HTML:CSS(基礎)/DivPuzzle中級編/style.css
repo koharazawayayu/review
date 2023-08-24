@@ -3,46 +3,45 @@
   content: "";
   display: block;
   clear: both;
-
 }
 .red--box {
-width: 400px;
-height: 100px;
-background: #ff0000;
+  width: 400px;
+  height: 100px;
+  background: #ff0000;
 }
 .green--box {
-width: 150px;
-height: 250px;
-background: #00ff1e;
-float: left;
+  width: 150px;
+  height: 250px;
+  background: #00ff1e;
+  float: left;
 }
 .puple--box {
-width: 150px;
-height: 50px;
-background: #cc00db;
-}
+  width: 150px;
+  height: 50px;
+  background: #cc00db;
+  }
 .blue--box {
-height: 100px;
-background: #0093b7;
+  height: 100px;
+  background: #0093b7;
 }
 .brown--box {
-height: 100px;
-background: #8c2727;
+  height: 100px;
+  background: #8c2727;
 }
 .orange--box {
-width: 100px;
-height: 150px;
-background: #ff9e6b;
-float: left;
+  width: 100px;
+  height: 150px;
+  background: #ff9e6b;
+  float: left;
 }
 .yellow--box {
   width: 400px;
   height: 100px;
   background: #ffe700;
-  }
+}
 .pupleandblue {
-    float: left;
-  }
+  float: left;
+}
 .mix {
   float: left;
 }
