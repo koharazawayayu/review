@@ -30,8 +30,7 @@
 }
 .box-section {
   background: #ffffff;
-  padding: 5px;
-  float: right;
+  padding: 10px;
   position: absolute;  
   top: 20px;
   right: 20px;
@@ -40,15 +39,19 @@
   width: 40px;
   height: 40px;
   background: #a9004b;
-  margin: 5px;
   float: left;
+}
+.box1:nth-child(2) {
+  margin: 0 10px;
 }
 .box2 {
   width: 140px;
   height: 40px;
   background: #ff863f;
-  margin: 5px;
   border: solid 5px#ffffff; 
+}
+.box2:nth-child(2){
+  margin: 10px 0;
 }
 .box-second {
   position: absolute;  
