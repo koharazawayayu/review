@@ -50,7 +50,7 @@
   height: 40px;
   background: #ff863f;
   margin-top: 10px;
-  border: solid 5px#ffffff; 
+  border: 5px solid #ffffff; 
 }
 .box2:first-child {
   margin-top: 0px;
