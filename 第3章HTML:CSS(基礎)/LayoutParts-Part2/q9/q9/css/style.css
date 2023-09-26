@@ -2,3 +2,142 @@
 
 /* カード内の画像は以下のURLを使用して下さい */
 /* https://picsum.photos/id/1005/200/300 */
+.box-section {
+  height: 200px;
+  width: 200px;
+  background-color: #76ff826b;
+  margin: 0 auto;
+  text-align: center;
+}
+.fadein {
+  animation: fadeIn 4s linear;
+  -webkit-animation: fadeIn 4s linear;
+}
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+.fadeout {
+  animation: fadeOut 4s linear 4s 1 normal;
+  -webkit-animation: fadeOut 4s linear 4s 1 normal;
+}
+@keyframes fadeOut {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
+.spin {
+  animation:4s linear infinite rotation1;
+}
+@keyframes rotation1{
+  0%{ transform:rotate(0);}
+  100%{ transform:rotate(360deg); }
+}
+.box-section2 {
+  width: 200px;
+  height: 200px;
+  background-color: #331aefd0;
+  margin: 0 auto;
+  text-align: center;
+  transition: 0.5s;
+}
+.colorchange:hover {
+  background-color: #ff27e2c9;
+  transition: 0.5s;
+}
+.spin-box:hover {
+  transition: transform 0.5s;
+  transform: rotate(360deg);
+}
+.slide-box:hover {
+ transform: translateY(-20%);
+ transition: 0.5s;
+}
+.slide-box2:hover {
+  transform: translateX(20%);
+  transition: 0.5s;
+}
+.height-box:hover {
+  height: 300px;
+  transition: 0.5s;
+}
+.width-box:hover {
+  width: 500px;
+  transition: 0.5s;
+}
+.boder-box:hover {
+  border: 10px #00ffe5 solid;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.shadow-box:hover {
+  box-shadow: 8px 11px 10px 3px #06031ed0;
+  transition: 0.5s;
+}
+.loading {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+}
+.animation {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 10px;
+  border-color: #14ff4bcd #ecf1f2 #ecf1f2;
+  position: relative;
+  animation-name: spin;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.picture-wrapper {
+  width: 300px;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #000000;
+  transition: 0.5s;
+}
+.picture-box {
+  width: 150px;
+  height: 150px;
+  background-image: url(../img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+} 
+.block-3 {
+  display: flex;
+  width: 100%;
+}
+.picture-wrapper:first-child {
+  border-top: 1px solid #000000;
+  border-right:0;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+}
+.picture-wrapper:last-child {
+  border-top: 1px solid #000000;
+  border-left:0;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+.picture-wrapper:hover {
+  box-shadow: 0px 0px 10px 3px #424242d0;
+  transition: 0.5s;
+}
