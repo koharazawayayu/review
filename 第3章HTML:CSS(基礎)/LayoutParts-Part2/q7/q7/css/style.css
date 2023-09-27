@@ -12,23 +12,20 @@
 .li {
   font-size: 16px;
 }
-.box-section::before {
+.box-section::before,.box-section::after {
   content: "";
   position: absolute;
-  bottom: -38px;
   left: 10%;
   transform: translateX(-50%);
   border: 20px solid transparent;
+}
+.box-section::before {
+  bottom: -38px;
   border-top: 20px solid #fad296;
   z-index: 2;
 }
 .box-section::after {
-  content: "";
-  position: absolute;
   bottom: -45px;
-  left: 10%;
-  transform: translateX(-50%);
-  border: 20px solid transparent;
   border-top: 20px solid #815a0a;
   z-index: 1;
 }
