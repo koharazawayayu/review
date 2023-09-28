@@ -1,0 +1,49 @@
+@charset "UTF-8";
+.top-title {
+  width: 100%;
+  background-color: #cff1ff;
+}
+.inner {
+  margin: 0 auto;
+  width: 600px;
+}
+.page-title {
+  padding-top: 60px;
+  font-size: 28px;
+  text-align: center;
+}
+.box-section {
+  padding: 50px;
+  background-color: #ecfaff;
+  margin-top: 60px;
+}
+.form-title {
+  font-size: 24px;
+  text-align: center;
+}
+.personal-content {
+  margin-top: 50px;
+}
+.content-title {
+  font-size: 18px;
+}
+.label-section {
+  margin-top: 25px;
+}
+.label-text {
+  font-size: 14px;
+  color: #464646;
+}
+.required {
+  color: #e40000;
+}
+.input-area {
+  width: 100%;
+  height: 35px;
+  margin-top: 6px;
+  padding: 5px;
+  color: #545658;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  background-color: #fbfbfb;
+}

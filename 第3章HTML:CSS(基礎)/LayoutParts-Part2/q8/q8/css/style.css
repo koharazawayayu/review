@@ -1,18 +1,16 @@
 @charset "UTF-8";
-.imag1 {
+.picture {
   height: 500px;
-  background-image: url(../../image/coffee-background.jpg);
+}
+.imag1 {
+  background: url(../../image/coffee-background.jpg);
 }
 .imag2 {
-  background-repeat: no-repeat;
+  background: url(../../image/coffee-background.jpg) no-repeat;
 }
 .imag3 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(../../image/coffee-background.jpg) no-repeat center/cover;
 }
 .imag4 {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background: url(../../image/coffee-background.jpg) no-repeat center/contain;
 }
