@@ -7,6 +7,7 @@
   <title>FormPractice</title>
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
 </head>
 
 <body>
@@ -14,27 +15,24 @@
     <div class="inner">
       <h1 class="page-title">フォーム作成</h1>
       <div class="box-section">
-        <form action>
+        <form action="">
           <h2 class="form-title">アカウント作成</h2>
           <div class="personal-content">
             <h3 class="content-title">個人情報</h3>
             <div class="label_section">
-              <label class="label-text" for="family-name">
-                名字
+              <label class="label-text" for="family-name">名字
                 <span class="required">※</span>
               </label>
               <input class="input-area" id="family_name" type="text" name="name" autocomplete="family-name" required>
             </div>
             <div class="label_section">
-              <label class="label-text" for="given_name">
-                名前
+              <label class="label-text" for="given_name">名前
                 <span class="required">※</span>
               </label>
-              <input class="input-area" id="given_name" type="text" name="name" autocomplete="given-name"required>
+              <input class="input-area" id="given_name" type="text" name="name" autocomplete="given-name" required>
             </div>
             <div class="label_section">
-              <label class="label-text">
-                生年月日
+              <label class="label-text">生年月日
                 <span class="required">※</span>
               </label>
               <div class="select_area is_flex">
@@ -54,106 +52,96 @@
                     <option value>2010</option>
                   </select>
                 </div>
-              <div class="select_unit">
-                <select class="input-area" name="month">
-                  <option value disabled selected>月</option>
-                  <option value>1</option>
-                  <option value>2</option>
-                  <option value>3</option>
-                  <option value>4</option>
-                  <option value>5</option>
-                  <option value>6</option>
-                  <option value>7</option>
-                  <option value>8</option>
-                  <option value>9</option>
-                  <option value>10</option>
-                  <option value>11</option>
-                  <option value>12</option>
-                </select>
-              </div>
-              <div class="select_unit">
-                <select class="input-area" name="day">
-                  <option value disabled selected>日</option>
-                  <option value>1</option>
-                  <option value>2</option>
-                  <option value>3</option>
-                  <option value>4</option>
-                  <option value>5</option>
-                  <option value>6</option>
-                  <option value>7</option>
-                  <option value>8</option>
-                  <option value>9</option>
-                  <option value>10</option>
-                </select>
+                <div class="select_unit">
+                  <select class="input-area" name="month">
+                    <option value disabled selected>月</option>
+                    <option value>1</option>
+                    <option value>2</option>
+                    <option value>3</option>
+                    <option value>4</option>
+                    <option value>5</option>
+                    <option value>6</option>
+                    <option value>7</option>
+                    <option value>8</option>
+                    <option value>9</option>
+                    <option value>10</option>
+                    <option value>11</option>
+                    <option value>12</option>
+                  </select>
+                </div>
+                <div class="select_unit">
+                  <select class="input-area" name="day">
+                    <option value disabled selected>日</option>
+                    <option value>1</option>
+                    <option value>2</option>
+                    <option value>3</option>
+                    <option value>4</option>
+                    <option value>5</option>
+                    <option value>6</option>
+                    <option value>7</option>
+                    <option value>8</option>
+                    <option value>9</option>
+                    <option value>10</option>
+                  </select>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="label_section">
-            <p class="label-text">
-            性別
-              <span class="required">※</span>
-            </p>
-            <div class="gender_area">
-              <label class="gender_element">
-                <input class="gender_content" type="radio" name="gender" value="man">
-                <span>
-                  男性
-                </span>
-              </label>
-              <label class="gender_element">
-                <input class="gender_content" type="radio" name="gender" value="woman">
-                <span>
-                  女性
-                </span>
-              </label>
-              <label class="gender_element">
-                <input class="gender_content" type="radio" name="gender" value="other">
-                <span>
-                  その他
-                </span>
-              </label>
+            <div class="label_section">
+              <p class="label-text">性別
+                <span class="required">※</span>
+              </p>
+              <div class="gender_area">
+                <label class="gender_element">
+                  <input class="gender_content" type="radio" name="gender" value="man">
+                  <span>男性</span>
+                </label>
+                <label class="gender_element">
+                  <input class="gender_content" type="radio" name="gender" value="woman">
+                  <span>女性</span>
+                </label>
+                <label class="gender_element">
+                  <input class="gender_content" type="radio" name="gender" value="other">
+                  <span>その他</span>
+                </label>
+              </div>
             </div>
-          </div>
-          <div class="label_section">
-            <label class="label-text">職業</label>
-            <div class="select_area">
-              <div class="select_unit">
-                <select class="input-area" name="work">
-                  <option value disabled selected>選択してください</option>
-                  <option value>学生</option>
-                  <option value>会社員</option>
-                  <option value>主婦</option>
-                  <option value>その他</option>
-                </select>
+            <div class="label_section">
+              <label class="label-text">職業</label>
+              <div class="select_area">
+                <div class="select_unit">
+                  <select class="input-area" name="work">
+                    <option value disabled selected>選択してください</option>
+                    <option value>学生</option>
+                    <option value>会社員</option>
+                    <option value>主婦</option>
+                    <option value>その他</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
           <div class="account_content">
             <h3 class="content-title">アカウント情報</h3>
             <div class="label_section">
-              <label class="label-text" for="account_name">
-                アカウント名
+              <label class="label-text" for="account_name">アカウント名
                 <span class="required">※</span>
               </label>
               <input class="input-area" id="account_name" type="text" required>
             </div>
             <div class="label_section">
-              <label class="label-text" for="email">
-                メールアドレス
+              <label class="label-text" for="email">メールアドレス
                 <span class="required">※</span>
               </label>
               <input class="input-area" id="email" type="email" autocomplete="email" required>
             </div>
             <div class="label_section">
-              <label class="label-text" for="password">
-                パスワード
+              <label class="label-text" for="password">パスワード
                 <span class="required">※</span>
               </label>
               <input class="input-area" id="password" type="password" required>
             </div>
             <div class="label_section">
-              <label class="label-text" for="duplication_password">
-                確認用パスワード
+              <label class="label-text" for="duplication_password">確認用パスワード
                 <span class="required">※</span>
               </label>
               <input class="input-area" id="duplication_password" type="password" required>
@@ -162,15 +150,13 @@
           <div class="content_content">
             <h3 class="content-title">連絡先</h3>
             <div class="label_section">
-              <label class="label-text" for="address">
-                住所
+              <label class="label-text" for="address">住所
                 <span class="required">※</span>
               </label>
               <input class="input-area" id="address" type="text" required>
             </div>
             <div class="label_section">
-              <label class="label-text" for="email">
-                電話番号
+              <label class="label-text" for="email">電話番号
                 <span class="required">※</span>
               </label>
               <input class="input-area" id="tel" type="tel" autocomplete="tel" required>
@@ -180,22 +166,16 @@
             <h3 class="content-title">購読情報</h3>
             <div class="label_section subscription_unit">
               <input type="checkbox" name="subscription" value="email_magazine" id="email_magazine">
-              <label class="label-text subscription_label" for="email_magazine">
-                メールマガジン
-              </label>
+              <label class="label-text subscription_label" for="email_magazine">メールマガジン</label>
             </div> 
             <div class="label_section subscription_unit">
               <input class="subscription_checkbox" type="checkbox" name="subscription" value="coupon" id="coupon">
-              <label class="label-text subscription_label" for="coupon">
-                クーポン
-              </label>
+              <label class="label-text subscription_label" for="coupon">クーポン</label>
             </div>
           </div>
           <div class="submit_content">
             <button class="btn btn_submit" type="submit">アカウント作成</button>
-            <p class="other-text">
-              アカウント作成することにより、
-              <a class="link-color" href="#">利用規約</a>と<a class="link-color" href="#">プライバシーポリシー</a>に同意するものとします
+            <p class="other-text">アカウント作成することにより、<a class="link-color" href="#">利用規約</a>と<a class="link-color" href="#">プライバシーポリシー</a>に同意するものとします
             </p>
           </div>
         </form>
