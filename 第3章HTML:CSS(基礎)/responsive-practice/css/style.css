@@ -186,10 +186,8 @@
 .box9:nth-child(3) {
   background-color: #00ff51;
 }
-@media screen and (max-width: 959px) {
-  .box9:nth-child(1) {
-    background-color: #0008ff;
-  }
+.box9:nth-child(1) {
+  background-color: #0008ff;
 }
 @media screen and (max-width: 959px) {
   .box9:nth-child(2) {
