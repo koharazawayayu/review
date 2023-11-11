@@ -175,23 +175,22 @@
 }
 .box9:nth-child(1) {
     background-color: #0008ff;
-    visibility: hidden;
+    display:none ;
 }
 .box9:nth-child(2) {
   background-color: #ff0000;
+  display: block;
 }
 .box9:nth-child(3) {
   background-color: #00ff51;
 }
 @media screen and (max-width: 959px) {
 .box9:nth-child(1) {
-  background-color: #0008ff;
-  visibility: visible; 
+  display:block ; 
 }
 }
 @media screen and (max-width: 959px) {
   .box9:nth-child(2) {
-    background-color: #ff0000;
     display: none;
   }
 }
