@@ -63,6 +63,7 @@
   font-size: 40px;
   letter-spacing: 10px;
   text-align: center;
+  padding-top: 20px;
 }
 .p4_section {
   font-size: 15px;
@@ -74,5 +75,131 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  width: 1100px;
+  padding-top: 50px;
+}
+.imag-box {
+  width: 440px;
+}
+.p_second {
+  width: 660px;
+}
+.thred_main {
+  background-color: #fff;
+}
+.p5_section {
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+.p_thred {
+  text-align: center;
+  padding-top: 50px;
+}
+.thred_img {
+  width: 300px;
+  height: 300px;
+  flex-wrap: wrap;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+.imag_secondbox {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.thred_img:nth-child(3) {
+  margin-right: 0;
+}
+.thred_img:nth-child(4) {
+  margin-bottom: 0;
+}
+.thred_img:nth-child(5) {
+  margin-bottom: 0;
+}
+.thred_img:nth-child(6) {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+.forth_main {
+  background-color: #d0dfea;
+}
+.p6_section {
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+.p_forth {
+  text-align: center;
+  padding: 50px;
+}
+.cell--table {
+  table-layout: fixed;
+  width: 1100px;
+  margin: 0 auto;
+}
+.cell--table th {
+  background-color: #6ba7eb;
+  font-size: 16px;
+  line-height: 26px;
+}
+.cell--table th, .cell--table td {
+  border-left: 2px solid #fff;
+  padding: 10px;
+}
+.cell--table th:nth-child(1) {
+  border-left: 0;
+}
+.cell--table td:nth-child(1) {
+  border-left: 0;
+}
+.cell--table td {
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+}
+.cell--table tr{
+  background: #f9f9f9;
+}
+
+.cell--table tr:nth-child(even){
+  background: #e0efff;
+}
+.table--area {
+  padding-bottom: 50px;
+}
+.fifth_main {
+  background-color: #d0dfea;
+}
+.imag-thredbox {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.fifth_main {
+  background-color: #e3f2fd;
+}
+.i_section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.fab , .fas {
+  width: 185px;
+  color: #8c8c8c;
+  overflow: hidden;
+  font-size: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.six_main {
+  background-color: #cfd8dc;
+}
+.p7_section {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+.p_six {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  justify-content: flex-end;
+  display: flex;
   width: 1100px;
 }
