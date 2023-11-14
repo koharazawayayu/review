@@ -202,10 +202,12 @@
 .fab:hover {
   transition: 0.5s;
   color: #fff;
+  text-decoration: none;
 }
 .fas:hover {
   transition: 0.5s;
   color: #fff;
+  text-decoration: none;
 }
 .six_main {
   background-color: #cfd8dc;
@@ -224,4 +226,7 @@
 .header_inner:hover {
   background-color: #333;
   transition: 0.3s;
+}
+a {
+  text-decoration: none;
 }
