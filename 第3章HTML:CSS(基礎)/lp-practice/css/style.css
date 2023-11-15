@@ -33,7 +33,7 @@
   padding: 12px 14px;
   text-decoration: none;
 }
-.main_section {
+.keyvisual {
   position: relative;
 }
 .main_img {
@@ -87,10 +87,10 @@
 .imag-box {
   width: 440px;
 }
-.p_second {
+.work {
   width: 660px;
 }
-.thred_main {
+.skils {
   background-color: #fff;
 }
 .p5_section {
@@ -130,7 +130,7 @@
   margin-right: 0;
   margin-bottom: 0;
 }
-.forth_main {
+.plan {
   background-color: #d0dfea;
 }
 .p6_section {
@@ -183,7 +183,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.fifth_main {
+.sns {
   background-color: #e3f2fd;
 }
 .i_section {
