@@ -6,6 +6,23 @@
 }
 .header {
   width: 100%;
+  background: #388bff;
+  position: fixed;
+}
+.logo {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.d--flex {
+  display: flex;
+  justify-content: space-between;
+}
+.nav li {
+  list-style: none;
+  padding: 30px;
+}
+.header {
+  width: 100%;
   background-color: #fff;
   position:sticky;
   top:0;
@@ -27,8 +44,7 @@
   position: absolute;
 }
 .header_section2 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  position: relative;
 }
 .header_inner {
   color: #fff;
@@ -36,7 +52,6 @@
   font-size: 12px;
   padding: 12px 14px;
   text-decoration: none;
-  
 }
 .keyvisual {
   position: relative;
