@@ -22,10 +22,9 @@
   margin-bottom: 15px;
   position: relative;
 }
-.fa-solid {
+.fa-archway {
   color: #777;
   position: absolute;
-  top: 50%;
 }
 .header_section2 {
   margin-top: 15px;
@@ -37,6 +36,7 @@
   font-size: 12px;
   padding: 12px 14px;
   text-decoration: none;
+  
 }
 .keyvisual {
   position: relative;
@@ -52,6 +52,9 @@
  .keyvisual {
   background: url(../img/keyvisual/keyvisual.jpg);
   height: 800px;
+  background-size: cover;
+  background-repeat:no-repeat;
+  text-align: center;
 }
 .h1_section {
   position: absolute;
@@ -199,7 +202,7 @@
   padding-bottom: 200px;
   text-align: center;
 }
-.fab , .fas {
+.icon {
   width: 185px;
   color: #8c8c8c;
   overflow: hidden;
@@ -207,12 +210,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.fab:hover {
-  transition: 0.5s;
-  color: #fff;
-  text-decoration: none;
-}
-.fas:hover {
+.icon:hover {
   transition: 0.5s;
   color: #fff;
   text-decoration: none;
