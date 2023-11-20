@@ -5,11 +5,11 @@
   margin: 0 auto;
 }
 .header {
-  width: 100%;
   background: #388bff;
-  position: fixed;
+  position: sticky;
+  top: 0;
 }
-.d--flex {
+.column {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
@@ -41,7 +41,7 @@
 .header_section2 {
   position: relative;
 }
-.header_inner {
+.content {
   color: #fff;
   background-color: #6ba7eb;
   font-size: 12px;
@@ -61,10 +61,11 @@
 }
  .keyvisual {
   background: url(../img/keyvisual/keyvisual.jpg);
-  height: 800px;
   background-size: cover;
   background-repeat:no-repeat;
   text-align: center;
+  padding-top: 400px;
+  padding-bottom: 400px;
 }
 .h1_section {
   position: absolute;
@@ -114,8 +115,7 @@
 .skils {
   background-color: #fff;
   padding-top: 50px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 70px;
 }
 .p5_section {
   font-size: 40px;
