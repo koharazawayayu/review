@@ -12,8 +12,8 @@
 .d--flex {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .nav li {
   list-style: none;
