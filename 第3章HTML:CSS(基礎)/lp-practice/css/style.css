@@ -52,7 +52,7 @@
 .main_img {
   width: 100%;
 }
-.p_section {
+.title {
   font-size: 65px;
   font-weight: 700;
   color: #6ba7eb;
@@ -64,36 +64,36 @@
   text-align: center;
   padding: 400px 0px;
 }
-.h1_section {
+.text {
   white-space: nowrap;
 }
-.p2_section {
+.sub_title {
   font-size: 40px;
   font-weight: 700;
   color: #fff;
   text-align: center;
   margin-top: 30px;
 }
-.second_main {
+.imag-box_area {
   background-color: #e3f2fd;
   padding-top: 50px;
 }
-.second_img {
+.container_img {
   width: 250px;
 }
-.p3_section {
+.lead {
   font-size: 40px;
   letter-spacing: 10px;
   text-align: center;
 }
-.p4_section {
+.message {
   font-size: 15px;
   line-height: 18px;
   word-break: break-all;
   text-align: center;
   margin-top: 35px;
 }
-.second_section {
+.container {
   display: flex;
   justify-content: space-between;
 }
@@ -110,11 +110,11 @@
   padding-top: 50px;
   padding-bottom: 70px;
 }
-.p5_section {
+.description {
   font-size: 40px;
   letter-spacing: 10px;
 }
-.p_thred {
+.inner_area {
   text-align: center;
 }
 .img_list {
@@ -127,18 +127,18 @@
   margin-right: 100px;
   margin-bottom: 100px;
 }
-.thred_img {
+.list_img {
   width: 300px;
   height: 300px;
   opacity: 0.7;
 }
-.thred_img:hover {
+.list_img:hover {
   opacity: 1.0;
+  transition: 0.7s;
 }
 .imag_secondbox {
   text-align: center;
   padding-top: 70px;
-  padding-bottom: 70px;
 }
 .img_li:nth-child(3n) {
   margin-right: 0;
@@ -156,11 +156,11 @@
   background-color: #d0dfea;
   padding: 50px;
 }
-.p6_section {
+.price {
   font-size: 40px;
   letter-spacing: 10px;
 }
-.p_forth {
+.plan_area {
   text-align: center;
 }
 .cell--table {
@@ -204,7 +204,7 @@
 .sns {
   background-color: #e3f2fd;
 }
-.i_section {
+.info {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -222,14 +222,14 @@
   color: #fff;
   text-decoration: none;
 }
-.six_main {
+.footer {
   background-color: #cfd8dc;
 }
-.p7_section {
+.copyright {
   font-size: 10px;
   letter-spacing: 0.5px;
 }
-.p_six {
+.footer_area {
   padding-top: 20px;
   padding-bottom: 25px;
   justify-content: flex-end;
