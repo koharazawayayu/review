@@ -154,7 +154,8 @@
 }
 .plan {
   background-color: #d0dfea;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .price {
   font-size: 40px;
@@ -196,7 +197,7 @@
   background: #e0efff;
 }
 .table--area {
-  padding-bottom: 50px;
+  padding-top: 50px;
 }
 .fifth_main {
   background-color: #d0dfea;
@@ -242,4 +243,7 @@
 }
 a {
   text-decoration: none;
+}
+.info_li {
+  display: inline;
 }
