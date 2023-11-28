@@ -209,6 +209,9 @@
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  display: flex;
+  flex-direction: row;    
+  justify-content: center;  
 }
 .icon {
   width: 185px;
@@ -244,6 +247,4 @@
 a {
   text-decoration: none;
 }
-.info_li {
-  display: inline;
-}
+
