@@ -204,10 +204,10 @@
 }
 .sns {
   background-color: #e3f2fd;
-}
-.info {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+.info {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -256,6 +256,9 @@ a {
   }
   .keyvisual {
     padding: 250px 0px;
+  }
+  .text {
+    white-space: normal;
   }
   .work {
     width: 100%;
