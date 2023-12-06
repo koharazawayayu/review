@@ -285,11 +285,6 @@ a {
   .cell--table {
     width: 100%;
   }
-  .sns {
-    width: 100%;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
 }
 @media screen and (max-width: 767px) {
   .inner {
@@ -330,7 +325,10 @@ a {
   .info {
     display: block;
     justify-content: normal;
-    margin: 50px 15px;
+  }
+  .sns {
+    background-color: #e3f2fd;
+    padding: 50px 15px;
   }
   .info_li {
     width: 100%;
