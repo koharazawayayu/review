@@ -223,7 +223,7 @@
 }
 .icon:hover {
   transition: 0.5s;
-  color: #fff;
+  background-color: #fff;
   text-decoration: none;
 }
 .footer {
@@ -279,11 +279,16 @@ a {
     margin-bottom: 0px;
     line-height: 0px;
   }
-  .img_li:nth-child(4n) {
-    margin-top: 80px;
+  .img_li:nth-child(3n) {
+    margin-bottom: 80px;
   }
   .cell--table {
     width: 100%;
+  }
+  .sns {
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -312,8 +317,8 @@ a {
     margin-bottom: 0px;
     line-height: 0px;
   }
-  .img_li:nth-child(4n) {
-    margin-top: 80px;
+  .img_li:nth-child(3n) {
+    margin-bottom: 80px;
   }
   .cell--table th {
     font-size: 14px;
@@ -321,9 +326,6 @@ a {
   }
   .cell--table td {
     font-size: 12px;
-  }
-  .sns {
-    width: 100%;
   }
   .info {
     display: block;
