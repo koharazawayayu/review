@@ -136,6 +136,10 @@
   opacity: 1.0;
   transition: 0.7s;
 }
+.img_link {
+  display: block;
+  height: 100%;
+}
 .imag_secondbox {
   text-align: center;
   padding-top: 70px;
@@ -221,11 +225,16 @@
   font-size: 40px;
   padding-top: 25px;
   padding-bottom: 25px;
+  transition: 0.5s;
 }
 .icon:hover {
   transition: 0.5s;
   background-color: #fff;
   text-decoration: none;
+}
+.sns_link {
+  display: block;
+  height: 100%;
 }
 .footer {
   background-color: #cfd8dc;
