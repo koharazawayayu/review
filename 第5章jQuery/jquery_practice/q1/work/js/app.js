@@ -30,9 +30,9 @@ jQuery(function(){
   $("#q5").on("click", function() {
     // DOMの挿入
     $("#q5").before("DOMの前")
-    $("#q5").prepend("DOMの中の前")
-    $("#q5").append("DOMの中の後")
-    $("#q5").after("DOMの後")
+      .prepend("DOMの中の前")
+      .append("DOMの中の後")
+      .after("DOMの後")
   });
 
   //Q1-6 クリックして移動
@@ -47,7 +47,7 @@ jQuery(function(){
   //クリック時のイベント
   $("#q7").on("click", function() {
     // idを取得
-    var id = document.getElementById("q7");
+    let id = document.getElementById("q7");
     //コンソールに表示
     console.log(id);
   });
@@ -67,7 +67,7 @@ jQuery(function(){
   //クリック時のイベント
   $("#q9 li").on("click", function() {
     // 配列番号を取得
-    var index = $("#q9 li").index(this);
+    let index = $("#q9 li").index(this);
     // アラートを表示
     alert(index);
   });
@@ -75,8 +75,8 @@ jQuery(function(){
   //Q1-10 Q10をクリックしてQ11を操作
   //クリック時のイベント
   $("#q10 li").on("click", function() {
-  // 配列番号を取得
-    var index = $("#q10 li").index(this);
-  //文字を大きくする
+    // 配列番号を取得
+    let index = $("#q10 li").index(this);
+    //文字を大きくする
     $("#q11 li").eq(index).addClass("large-text");
   });

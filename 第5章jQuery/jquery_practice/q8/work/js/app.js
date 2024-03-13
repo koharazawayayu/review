@@ -1,9 +1,9 @@
 // API
 $(function(){
-  var oldSerchWord = "" //前の検索ワードを保持しておく変数を用意
-  var pageCount = 1; //ページカウントの変数
+  let oldSerchWord = "" //前の検索ワードを保持しておく変数を用意
+  let pageCount = 1; //ページカウントの変数
   $('.search-btn').on('click', function(){// 検索が押された時
-    var searchWord = $('#search-input').val(); //検索ワードを入れる変数
+    let searchWord = $('#search-input').val(); //検索ワードを入れる変数
     if (oldSerchWord == searchWord) { //前の検索ワードと今の検索ワード比較する
       pageCount++; //ページカウントを+1する
     } else {
@@ -39,10 +39,10 @@ $(function(){
       $.each(result[0]['items'], function(index, val) {
         
         //項目の変数を用意
-        var title = val['title']
-        var creator = val['creator']
-        var publisher = val['dc:publisher']
-        var link = val['link']['@id']
+        let title = val['title']
+        let creator = val['creator']
+        let publisher = val['dc:publisher']
+        let link = val['link']['@id']
 
         if (typeof creator == "undefined") { //作者がundefinedの場合
           creator = "作者不明"; 

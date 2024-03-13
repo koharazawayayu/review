@@ -8,28 +8,9 @@ $(function(){
     console.log("生年月日");
     console.log($('.year').val()+"年"+$('.month').val()+"月"+$('.day').val()+"日");
     console.log("性別");
-    if($('input[name="gender"]:checked').val() == "man") {
-      console.log("男性");
-    } else if($('input[name="gender"]:checked').val() == "woman") {
-      console.log("女性");
-    } else if($('input[name="gender"]:checked').val() == "other") {
-      console.log("その他")
-    } else {
-      console.log($('input[name="gender"]:checked').val());
-    }
+    console.log('input[name="gender"]:checked');
     console.log("職業");
-    // console.log($('.occupation option:selected').val());
-    if($('.occupation').val() == "student") {
-      console.log("学生");
-    } else if($('.occupation').val() == "company employee") {
-      console.log("会社員");
-    } else if($('.occupation').val() == "housewife") {
-      console.log("主婦")
-    } else if($('.occupation').val() == "other") {
-      console.log("その他")
-    } else {
-      console.log($('.occupation').val());
-    }
+    console.log($('.occupation').val());
     console.log("アカウント名");
     console.log($('#account__name').val());
     console.log("メールアドレス");
