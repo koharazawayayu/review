@@ -8,7 +8,7 @@ $(function(){
     console.log("生年月日");
     console.log($('.year').val()+"年"+$('.month').val()+"月"+$('.day').val()+"日");
     console.log("性別");
-    console.log('input[name="gender"]:checked');
+    console.log($('[name="gender"]:checked').val());
     console.log("職業");
     console.log($('.occupation').val());
     console.log("アカウント名");
@@ -27,6 +27,5 @@ $(function(){
     $('input[name=subscription]:checked').each(function() {
       console.log($(this).val());
     });
-    
   });
 });

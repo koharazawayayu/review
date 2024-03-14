@@ -47,7 +47,7 @@ jQuery(function(){
   //クリック時のイベント
   $("#q7").on("click", function() {
     // idを取得
-    let id = document.getElementById("q7");
+    const id = document.getElementById("q7");
     //コンソールに表示
     console.log(id);
   });
@@ -67,7 +67,7 @@ jQuery(function(){
   //クリック時のイベント
   $("#q9 li").on("click", function() {
     // 配列番号を取得
-    let index = $("#q9 li").index(this);
+    const index = $("#q9 li").index(this);
     // アラートを表示
     alert(index);
   });
@@ -76,7 +76,7 @@ jQuery(function(){
   //クリック時のイベント
   $("#q10 li").on("click", function() {
     // 配列番号を取得
-    let index = $("#q10 li").index(this);
+    const index = $("#q10 li").index(this);
     //文字を大きくする
     $("#q11 li").eq(index).addClass("large-text");
   });
