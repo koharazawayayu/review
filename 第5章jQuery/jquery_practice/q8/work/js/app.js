@@ -1,14 +1,14 @@
 // API
 $(function(){
-  let oldSerchWord = "" //前の検索ワードを保持しておく変数を用意
+  let oldSearchWord = "" //前の検索ワードを保持しておく変数を用意
   let pageCount = 1; //ページカウントの変数
   $('.search-btn').on('click', function(){// 検索が押された時
     let searchWord = $('#search-input').val(); //検索ワードを入れる変数
-    if (oldSerchWord == searchWord) { //前の検索ワードと今の検索ワード比較する
+    if (oldSearchWord == searchWord) { //前の検索ワードと今の検索ワード比較する
       pageCount++; //ページカウントを+1する
     } else {
       pageCount = 1; //ページカウントを1に戻す
-      oldSerchWord = searchWord; //今の検索ワードを保持しておく
+      oldSearchWord = searchWord; //今の検索ワードを保持しておく
     }
    
     const settings = {
@@ -24,32 +24,30 @@ $(function(){
   });
 
   $('.reset-btn').on('click', function(){// リセットが押された時
-    $('#search-input').val(""); //検索のテキストをクリアに
+    $('#search-input').val(""); //検索のテキストをクリア
+    
+    // 初期化
+    oldSearchWord = "";
+    pageCount = 1;
+
     removeDOM();  //検索結果を削除
   });
 
   function displayResult(result) {
     // 検索結果がなかった時の表示
+    removeDOM();
     if (typeof result[0]['items'] == "undefined") {
-      removeDOM();
       $('.inner').prepend('<div class="message">検索結果が見つかりませんでした。<br>別のキーワードで検索して下さい。</div>')
     } else {
-      removeDOM();
       //繰り返し処理
       $.each(result[0]['items'], function(index, val) {
         
         //項目の変数を用意
-        let title = val['title']
-        let creator = val['creator']
-        let publisher = val['dc:publisher']
-        let link = val['link']['@id']
+        const title = typeof val['title'] == "undefined" ? "タイトル不明" : val['title']
+        const creator = typeof val['creator'] == "undefined" ? "作者不明" : val['creator']
+        const publisher = typeof val['dc:publisher'] == "undefined" ? "出版社不明" : val['dc:publisher']
+        const link = typeof val['link']['@id'] == "undefined" ? "リンク不明" : val['link']['@id']
 
-        if (typeof creator == "undefined") { //作者がundefinedの場合
-          creator = "作者不明"; 
-        }
-        if (typeof publisher == "undefined") {//出版社がundefinedの場合
-          publisher = "出版社不明";
-        }
         // 結果表示用のDOMを挿入
         $('.lists').prepend(
           '<li class="lists-item">' + 
@@ -66,7 +64,9 @@ $(function(){
   }
 
   function displayError(err) {
-    
+    if (err.status === 0) {
+      $('.inner').prepend('<div class="message">正常に通信できませんでした。<br>インターネットの接続の確認をしてください。</div>')
+    }
   }
   //DOM削除用のメソッド
   function removeDOM() {
