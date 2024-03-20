@@ -3,7 +3,7 @@ $(function(){
   let oldSearchWord = "" //前の検索ワードを保持しておく変数を用意
   let pageCount = 1; //ページカウントの変数
   $('.search-btn').on('click', function(){// 検索が押された時
-    let searchWord = $('#search-input').val(); //検索ワードを入れる変数
+    const searchWord = $('#search-input').val(); //検索ワードを入れる変数
     if (oldSearchWord == searchWord) { //前の検索ワードと今の検索ワード比較する
       pageCount++; //ページカウントを+1する
     } else {
@@ -43,10 +43,10 @@ $(function(){
       $.each(result[0]['items'], function(index, val) {
         
         //項目の変数を用意
-        const title = typeof val['title'] == "undefined" ? "タイトル不明" : val['title']
-        const creator = typeof val['creator'] == "undefined" ? "作者不明" : val['creator']
-        const publisher = typeof val['dc:publisher'] == "undefined" ? "出版社不明" : val['dc:publisher']
-        const link = typeof val['link']['@id'] == "undefined" ? "リンク不明" : val['link']['@id']
+        const title = val.title ? "タイトル不明" : val.title
+        const creator = val.creator ? "作者不明" : val.creator
+        const publisher = val['dc:publisher'] ? "出版社不明" : val['dc:publisher']
+        const link = val.link['@id'] ? "リンク不明" : val.link['@id']
 
         // 結果表示用のDOMを挿入
         $('.lists').prepend(
@@ -64,7 +64,7 @@ $(function(){
   }
 
   function displayError(err) {
-    if (err.status === 0) {
+    if (err.status === 0 || err.status === 400) {
       $('.inner').prepend('<div class="message">正常に通信できませんでした。<br>インターネットの接続の確認をしてください。</div>')
     }
   }
