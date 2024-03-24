@@ -35,7 +35,7 @@ $(function(){
 
   function displayResult(result) {
     // 検索結果がなかった時の表示
-    removeDOM();
+    removeDOM()
     if (typeof result[0]['items'] == "undefined") {
       $('.inner').prepend('<div class="message">検索結果が見つかりませんでした。<br>別のキーワードで検索して下さい。</div>')
     } else {
@@ -64,8 +64,19 @@ $(function(){
   }
 
   function displayError(err) {
-    if (err.status === 0 || err.status === 400) {
+    removeDOM()
+    console.log(err);
+    // インターネット接続がされていない時
+    if (err.status === 0) {
       $('.inner').prepend('<div class="message">正常に通信できませんでした。<br>インターネットの接続の確認をしてください。</div>')
+    }
+    // 検索文字列がない場合
+    else if (err.status === 400) {
+      $('.inner').prepend('<div class="message">検索キーワードが有効ではありません。<br>1文字以上で検索して下さい。</div>')
+    }
+    //　0 と　400エラー以外の場合
+    else {
+      $('.inner').prepend('<div class="message">予期せぬエラーが起きました。<br>再読み込みを行ってください。</div>')
     }
   }
   //DOM削除用のメソッド
